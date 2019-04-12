@@ -4,6 +4,7 @@ namespace App;
 
 class Post
 {
+    protected $fillable=['title', 'content'];
     public function getPosts($session)
     {
         if (!$session->has('posts')) {
